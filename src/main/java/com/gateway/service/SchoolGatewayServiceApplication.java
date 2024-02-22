@@ -19,6 +19,7 @@ public class SchoolGatewayServiceApplication {
 	public RouteLocator routes(RouteLocatorBuilder builder) {
 		return builder.routes().route("school-jpa",p -> p.path("/school/course/**").uri("lb://school-jpa"))
 				.route("school-service",p -> p.path("/school/student/**").uri("lb://school-service")).build();
+		//hi sai
 	}
 
 }
